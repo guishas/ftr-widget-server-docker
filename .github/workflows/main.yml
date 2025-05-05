@@ -1,4 +1,4 @@
-name: widget-server-pipeline
+name: widget-server-pipeline-ecr
 
 on:
   push:
