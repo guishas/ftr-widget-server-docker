@@ -27,7 +27,7 @@ jobs:
           SHA=$(echo $GITHUB_SHA | head -c7)
           echo "sha=$SHA" >> $GITHUB_OUTPUT
 
-      - name: build and push image to aws ecr
+      - name: build and push image to dockerhub
         id: build-and-push-image
         env:
           DOCKERHUB_REPOSITORY: ${{vars.DOCKERHUB_REPOSITORY}}
