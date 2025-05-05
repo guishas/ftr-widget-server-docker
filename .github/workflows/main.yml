@@ -1,1 +1,14 @@
+name: widget-server-pipeline
 
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    name: build docker image
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
