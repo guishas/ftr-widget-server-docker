@@ -3,7 +3,7 @@ name: widget-server-pipeline-dockerhub
 on:
   push:
     branches:
-      - "main"
+      # - "main"
 
 jobs:
   build:
